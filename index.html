@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <h1>Jay's component library</h1>
@@ -25,45 +26,45 @@
     <hr />
 
     <h2>@container</h2>
-    <h3>fluid container</h3>
-    <div>This is going to be a fluid container. It will go full width of page. With some margin. </div>
+    <h3 >@fluid container</h3>
+    <div class="container">This is going to be a fluid container. It will go full width of page. With some margin. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil officia rerum illo aliquid voluptatibus! A dolorem animi nulla eaque aliquid.</div>
 
-    <h3>centered container</h3>
-    <div>This is going to be a center container. It will go till a given width and center content.</div>
+    <h3>@centered container</h3>
+    <div class=" container-centered">This is going to be a center container. It will go till a given width and center content.</div>
 
     <hr />
 
     <h2>@links</h2>
-    <a href="#">Primary Link</a>
-    <a href="#">Secondary Link</a>
+    <a href="#" class="primary-link">Primary Link</a>
+    <a href="#" class='secondary-link'>Secondary Link</a>
 
     <hr />
 
     <h2>@lists</h2>
 
-    <p>unordered lists</p>
+    <h3>unordered lists</h3>
     <p>We don't want to show bullets in the unordered list. We'll remove that with CSS.</p>
 
-    <ul>
-      <li>item 1</li>
-      <li>item 3</li>
-      <li>item 3</li>
+    <ul class="bullet-none ">
+      <li class="list-style">item 1</liclass>
+      <li class="list-style">item 3</li>
+      <li class="list-style">item 3</li>
     </ul>
 
-    <p>inline lists</p>
+    <h3>inline lists</h3>
     <p>Instead of going in a new row, we will create a list which will take columns.</p>
-    <ol>
-      <li>item 1</li>
-      <li>item 3</li>
-      <li>item 3</li>
+    <ol class="bullet-none">
+      <li  class="inline-list-item">item 1</li>
+      <li class="inline-list-item">item 2</li>
+      <li class="inline-list-item">item 3</li>
     </ol>
 
-    <p>reverse ordered lists</p>
+    <h3>reverse ordered lists</h3>
     <p>counting will go reverse for this list</p>
-    <ol>
-      <li>something</li>
-      <li>something else</li>
-      <li>something different</li>
+    <ol reversed>
+      <li class="list-style">something</li>
+      <li class="list-style">something else</li>
+      <li class="list-style">something different</li>
     </ol>
 
     <hr />
@@ -74,11 +75,14 @@
       pages.
     </p>
 
-    <nav>
-      <div>theBrandName</div>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
+    <nav class="navbar">
+      <div class="logo">theBrandName</div>
+      <ul class="bullet-none nav-list">
+        <li class="inline-list-item"><a href="#">Home</a></li>
+      <li class="inline-list-item"><a href="#">About</a></li>
+      <li class="inline-list-item"><a href="#">Contact</a></li>
+      </ul>
+      
     </nav>
 
     <hr />
