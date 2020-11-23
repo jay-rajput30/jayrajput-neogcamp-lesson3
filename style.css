@@ -103,3 +103,17 @@ hr {
   flex-grow: 1;
   justify-content: flex-end;
 }
+
+/* header */
+header img {
+  max-width: 300px;
+  margin: 0 auto;
+  display: block;
+}
+
+header h3 {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  color: #6b7280;
+}
